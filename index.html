@@ -26,17 +26,20 @@
             Bookmark your favorite sites
             <i class="fa-solid fa-bookmark"></i>
         </h2>
-        <form onsubmit="this.submit(); this.reset(); return false;">
+        <form id="myForm">
             <div class="mb-3">
-                <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <label for="siteName" name="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
                 <input type="text" id="siteName" class="form-control">
+                <p id="nameVal"></p>
             </div>
             <div class="mb-3">
                 <label for="siteUrl" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
                 <input type="text" id="siteUrl" class="form-control">
+                <p id="urlVal"></p>
             </div>
-            <div class="text-center">
-                <button type="submit" onclick="addWebsite()" class="s-btn py-2 px-5">Submit</button>
+            <div class="btns text-center">
+                <button id="submit" type="submit" onclick="addWebsite()" class="s-btn py-2 px-5">Submit</button>
+                <button id="update" onclick="updateDateBtn()" class="s-btn py-2 px-5">Update</button>
             </div>
         </form>
     </div>
@@ -47,6 +50,7 @@
                 <th>Website Name</th>
                 <th>Visit</th>
                 <th>Delete</th>
+                <th>Update</th>
             </thead>
             <tbody id="tableData"></tbody>
         </table>

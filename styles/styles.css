@@ -58,3 +58,22 @@ h2 {
     background-color: transparent;
     color: #ED5AB3;
 }
+
+.u-btn{
+    background-color: #FFCD4B;
+    color: #fff;
+}
+
+.u-btn:hover{
+    background-color: transparent;
+    color: #FFCD4B;
+}
+
+#nameVal{
+    color: red;
+}
+
+#urlVal{
+    color: red;
+}
+
